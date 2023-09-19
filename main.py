@@ -70,7 +70,9 @@ for cell in ws[fullname_column][1:]:
 
 for cell1 in ws[Salary_column][1:]:
     new_sal=cell1.value
+    print(new_sal/10)
     new_sal+=(new_sal/10)
+    print(new_sal)
     ws.cell(row=cell1.row,column=new_salary_column).value=new_sal
 
 yellow = "00FFFF00"
